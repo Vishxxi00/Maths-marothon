@@ -26,13 +26,18 @@ if(isset($_POST['lsubmit'])){
 <head>
 <meta charset="utf-8">
 <title>Login</title>
+<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<script src="./js/jquery-3.5.1.slim.min.js"></script>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+</head>
 
 </head>
 
 <body>
 	
 	<div class="loginbox">
-	<img src="avatar.png" class="avatar">
+	<img src="./images/avatar.png" class="avatar">
 		<h1>Login Here</h1>
 		<form action"login.php" method="POST">
 		<p>Username</p>
@@ -45,95 +50,4 @@ if(isset($_POST['lsubmit'])){
 		</form>
 	</div>
 </body>
-<style>
-body{
-	margin:0;
-	padding: 0;
-	background:url("wall.jpg");
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
-	font-family: sans-serif;
-	
-	
-}
-.loginbox{
-	width: 380px;
-	height: 500px;
-	background: #000;
-	color: #fff;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transform: translate(-50%,-50%);
-	box-sizing: border-box;
-	padding: 70px 30px
-	
-}
-.avatar{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	position: absolute;
-	top: -50px;
-	left: calc(50%  - 50px);
-}
-
-h1{
-	margin: 0;
-	padding: 0 0 20px;
-	text-align: center;
-	font-size: 22px;
-}
-.loginbox p{
-	margin: 0;
-	padding: 0;
-	font-weight: bold;
-}
-
-.loginbox input{
-	width: 100%;
-	margin-bottom: 20px;
-	
-}
-.loginbox input[type="text"],input[type="Password"]
-{
-	border: none;
-	border-bottom: 1px solid #fff;
-	background: transparent;
-	outline: none;
-	height: 40px;
-	color: #fff;
-	font-size: 16px;
-}
-.loginbox input[type="submit"]
-{
-	border: none;
-	outline: none;
-	height: 40px;
-	background: #fb2525;
-	color: #fff;
-	font-size: 18px;
-	border-radius: 20px;
-	
-}
-.loginbox input[type="submit"]:hover
-{
-	cursor: pointer;
-	background: #e65c00;
-	color: #000;
-}
-.loginbox a{
-	text-decoration: none;
-	font-size: 14px;
-	line-height: 20px;
-	color:darkgray;
-	
-}
-.loginbox a:hover
-{
-	color: #e65c00;
-}
-</style>
-
 </html>
